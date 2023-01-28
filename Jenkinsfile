@@ -3,8 +3,15 @@ pipeline {
 
     stages {
         stage('Build') {
+            // build
             steps {
-                sh docker
+                // sh docker build .
+                sh "build the image"
+            }
+            // run
+            steps {
+                // sh docker run 
+                sh "run the container here"
             }
         }
         stage('test') {
