@@ -6,7 +6,9 @@ pipeline {
             // build
             steps {
                 // run and build the image
-                echo "build and run the image"
+                echo "build and run the image here"
+                docker build .
+                docker run -p 8080:8080 node:12
             }
         }
         stage('test') {
