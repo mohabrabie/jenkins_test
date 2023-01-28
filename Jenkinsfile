@@ -6,7 +6,7 @@ pipeline {
             // build
             steps {
                 // run and build the image
-                echo "build and run the image here"
+                echo "build and run the image here";
                 ls
                 // sudo docker build .
                 // sudo docker run --expose 3000 node:12
