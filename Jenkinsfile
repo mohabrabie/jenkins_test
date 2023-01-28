@@ -6,17 +6,26 @@ pipeline {
             // build
             steps {
                 // run and build the image
-                sh "build and run the image"
+                echo "build and run the image"
+                script { 
+
+                }
             }
         }
         stage('test') {
             steps {
-                sh 'testing the application here'
+                echo 'testing the application here'
+                script { 
+
+                }
             }
         }
         stage('deploy') {
             steps {
-                sh "deploying the application here"
+                echo "deploying the application here"
+                script { 
+
+                }
             }
         }
     }
