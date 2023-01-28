@@ -7,8 +7,8 @@ pipeline {
             steps {
                 // run and build the image
                 echo "build and run the image here"
-                docker build .
-                docker run --expose 3000 node:12
+                sudo docker build .
+                sudo docker run --expose 3000 node:12
             }
         }
         stage('test') {
