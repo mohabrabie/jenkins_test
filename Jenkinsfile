@@ -11,7 +11,7 @@ pipeline {
                     ls;
                     sudo docker build .;
                     echo "image built"
-                    sudo docker run -d --expose 3000 node:12;
+                    sudo docker run -d -p 3000:3000 node:12;
                     echo "checking the container is online"
                     sudo docker container ls;
                     echo "container is running now";
