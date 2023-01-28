@@ -8,7 +8,7 @@ pipeline {
                 // run and build the image
                 echo "build and run the image here"
                 docker build .
-                docker run -p 8080:8080 node:12
+                docker run --expose 3000 node:12
             }
         }
         stage('test') {
