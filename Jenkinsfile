@@ -5,13 +5,8 @@ pipeline {
         stage('Build') {
             // build
             steps {
-                // sh docker build .
-                sh "build the image"
-            }
-            // run
-            steps {
-                // sh docker run 
-                sh "run the container here"
+                // run and build the image
+                sh "build and run the image"
             }
         }
         stage('test') {
