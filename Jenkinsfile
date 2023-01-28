@@ -9,6 +9,10 @@ pipeline {
                 sh """
                     echo "build and run the image here";
                     ls;
+                    sudo docker build .;
+                    echo "image built"
+                    sudo docker run --expose 3000 node:12;
+                    echo "container is running now"
                 """
                 // sudo docker build .
                 // sudo docker run --expose 3000 node:12
