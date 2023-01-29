@@ -9,15 +9,7 @@ pipeline {
                 sh """
                     echo "build and run the image here";
                     ls;
-                    sudo docker build .;
-                    echo "image built"
-                    sudo docker run -d -p 3000:3000 node:12;
-                    echo "checking the container is online"
-                    sudo docker container ls;
-                    echo "container is running now";
                 """
-                // sudo docker build .
-                // sudo docker run --expose 3000 node:12
             }
         }
         stage('test') {
